@@ -1,0 +1,82 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("fondo.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Barra superior */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 90%;
+    max-width: 1000px;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    background: rgba(255, 255, 255, 0.12); /* semi transparente */
+    backdrop-filter: blur(12px); /* efecto vidrio */
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* Links del menú */
+.menu {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+    margin: 0 15px;
+}
+
+.links:hover {
+    color: cyan;
+}
+
+/* Línea animada abajo */
+.links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: cyan;
+    transition: 0.3s;
+}
+
+.links:hover::after {
+    width: 100%;
+}
+.home {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.perfil {
+  margin-top: 130px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* círculo */
+    object-fit: cover;
+}

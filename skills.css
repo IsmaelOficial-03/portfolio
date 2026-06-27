@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+/* Barra de navegación (sin cambios) */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1000px;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu:hover {
+    color: cyan;
+}
+
+.menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: cyan;
+    transition: 0.3s;
+}
+
+.menu:hover::after {
+    width: 100%;
+}
+
+/* ==================== SKILLS ==================== */
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #00ffea, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Grid de habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: all 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 243, 255, 0.2);
+}
+
+.skill-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.skill-card:hover .skill-logo {
+    transform: scale(1.15);
+}
+
+.skill-name {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Secciones */
+.section {
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #00ffea;
+}
+
+/* Game Servers */
+.servers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.server-item {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.server-item:hover {
+    border-color: cyan;
+    transform: translateY(-5px);
+}
+
+/* Estoy Aprendiendo */
+.learning-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.learning-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.learning-item:hover {
+    background: rgba(0, 243, 255, 0.2);
+    color: cyan;
+    transform: scale(1.08);
+}

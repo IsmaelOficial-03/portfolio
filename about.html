@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Ismael</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <nav>
+    <div class="links">
+      <a class="menu" href="index.html">Inicio</a>
+      <a class="menu" href="about.html">Sobre mi</a>
+      <a class="menu" href="skills.html">Habilidades</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="info">
+      <h2>SOBRE MI</h2>
+      <h4>
+        Soy Ismael, un desarrollador que ama la tecnología<br> 
+        la codificación y la creación de proyectos desde cero.<br>
+        Trabajo con HTML, CSS, JavaScript y administración de<br>
+        servidores, siempre aprendiendo y mejorando cada día.
+      </h4>
+    </div>
+
+    <!-- ====================== SECCIÓN MAIL ====================== -->
+    <section class="mail-section">
+      <div class="mail-container">
+        <div class="mail-header">
+          <span class="mail-icon">✉️</span>
+          <h3>Mail</h3>
+        </div>
+        
+        <div class="email-bar">
+          <span class="email-text">tucorreo@gmail.com</span>
+          
+          <div class="email-actions">
+            <a href="mailto:tucorreo@gmail.com" class="btn send-btn" title="Enviar email">
+              <img src="send-icon.png" alt="Enviar" width="22" height="22">
+            </a>
+            
+            <button onclick="copyEmail()" class="btn copy-btn" title="Copiar correo">
+              <img src="copy-icon.png" alt="Copiar" width="22" height="22">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="about.js"></script>
+</body>
+</html>
